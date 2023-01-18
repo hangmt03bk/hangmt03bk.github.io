@@ -1,0 +1,46 @@
+body{
+	margin-left: 50px;
+	background-color: DarkSlateGray;
+	color: white;
+}
+h1,h2{
+	color: LightSkyBlue;
+}
+p span{
+	color: Gold;
+}
+.explain{
+	font-style: italic;
+}
+a{
+	text-decoration: none;
+	color: red;
+}
+a:hover{
+	text-decoration:underline;
+}
+img{
+	width: 150px;
+}
+#movies{
+	margin-left: 40px;
+	transform: rotate(180deg);
+}
+#movies > li{
+	transform: rotate(180deg);
+}
+#brief::first-letter{
+	font-size: 1.5em
+}
+#brief{
+	transform:rotateX(180deg);
+}
+#movieDetail{
+	font-size:90%;
+}
+#movieDetail > dn {
+	color: gold;
+}
+.nei{
+	color:greenyellow;
+}
