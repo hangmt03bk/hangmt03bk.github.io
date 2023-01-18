@@ -37,14 +37,14 @@ ul{
 #deleted{
     text-decoration: line-through;
 }
-#steps, #userCom{
+.steps, .userCom{
     font-weight: bold;
 }
 blockquote{
     font-style: italic;
     background-color: #FFFFA8;
 }
-#spoon{
+.spoon{
     text-decoration: underline;
 }
 #copyright{
