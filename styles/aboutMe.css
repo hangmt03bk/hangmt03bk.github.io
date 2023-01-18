@@ -38,7 +38,7 @@ img{
 #movieDetail{
 	font-size:90%;
 }
-#movieDetail > dn {
+#movieDetail > dt {
 	color: gold;
 }
 .nei{
