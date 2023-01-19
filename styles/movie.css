@@ -62,9 +62,11 @@ h1{
     display:flex;
     column-count: 2;
     column-gap: 2%;
-    column-width: 47%;
     margin-left: 2%;
     margin-right: 2%;
+}
+#reviewLeft{
+    width: 47%;
 }
 .review{
     font-size: 8pt;
