@@ -60,13 +60,15 @@ h1{
 
 .reviews{
     display:flex;
-    column-count: 2;
-    column-gap: 2%;
     margin-left: 2%;
     margin-right: 2%;
 }
 #reviewLeft{
-    width: 47%;
+    width: 50%;
+    margin-right: 2%;
+}
+#reviewRight{
+    width: 50%;
 }
 .review{
     font-size: 8pt;
