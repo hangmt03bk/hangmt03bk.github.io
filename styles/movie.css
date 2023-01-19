@@ -1,0 +1,119 @@
+body{
+    background-image: url("../movieImages/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#bannerNav{
+    background-image: url("../movieImages/bannerbg.png");
+    background-repeat: repeat-x;
+    text-align: center;
+}
+h1{
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: #999999 3px 3px;
+}
+#content{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    border: 4px gray solid;
+    height: 100%;
+
+}
+#contentRight{
+    width:250px;
+    float:right;
+    background-color:#A2B964;
+    border-top-right-radius: 20px;
+   
+}
+#contentLeft{
+    width:550px
+}
+#contentRight img{
+    border-top-right-radius: 16px;
+}
+
+#rating{
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    background-image: url("../movieImages/rbg.png");
+    background-repeat: repeat-x;
+    border-top-left-radius: 16px;
+    display: flex;
+}
+#percent{
+    align-self: center;
+}
+#rating img{
+    border-top-left-radius: 16px;
+}
+
+.reviews{
+    display:flex;
+    column-count: 2;
+    column-gap: 2%;
+    column-width: 47%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.review{
+    font-size: 8pt;
+    font-weight:  bold;
+    box-sizing: border-box;
+    background-color: #E8DC9B;
+    border: gray 2px solid;
+    border-radius: 10px;
+    padding: 8px;
+    overflow: auto;
+}
+
+.reviews img{
+    float: left;
+    vertical-align:middle ;
+    margin-right: 5px;
+}
+.author{
+    margin-bottom: 20pt;
+}
+.pub{
+    font-style: italic;
+}
+
+#overview{
+    font-size:8pt;
+    font-family: Arial,sans-serif;
+    padding-left:10pt
+}
+#overview dt{
+    font-weight: bold;
+    margin-top: 10pt
+}
+#overview ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+.validator{
+    opacity: 0.5;
+    position:fixed;
+    right: 0px;
+    bottom: 0px;
+}
+#pages{
+    width: 100%;
+    text-align: center;
+    background-color: #A2B964;
+    padding: 1px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
