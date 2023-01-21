@@ -1,7 +1,7 @@
 
-var aniIndex = 0;
+var aniValue,aniIndex = 0;
 var timer;
-var aniValue;
+var starBtn, stopBtn, animation, textArea, fontSize, turbo;
 
 function load(){
     starBtn     = document.getElementById("start");
