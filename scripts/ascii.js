@@ -1,4 +1,5 @@
 
+"use strict"
 var aniValue =[],aniIndex = 0;
 var timer;
 var starBtn, stopBtn, animation, textArea, fontSize, turbo, curText;
