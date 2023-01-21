@@ -1,7 +1,7 @@
 
-var aniValue,aniIndex = 0;
+var aniValue =[],aniIndex = 0;
 var timer;
-var starBtn, stopBtn, animation, textArea, fontSize, turbo;
+var starBtn, stopBtn, animation, textArea, fontSize, turbo, curText;
 
 function load(){
     starBtn     = document.getElementById("start");
@@ -48,6 +48,7 @@ function speedChange(){
 }
 
 function intervalTimeout(){
+    if(aniValue.length == 0)    return;
     textArea.value = aniValue[aniIndex++];
     if(aniIndex == aniValue.length) aniIndex = 0;
 }
