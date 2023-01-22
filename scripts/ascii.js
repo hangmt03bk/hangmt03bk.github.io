@@ -24,6 +24,7 @@ function load(){
     
         curText = textArea.value;
         timer = setInterval(intervalTimeout,250);
+        /*global ANIMATIONS */
         aniValue = ANIMATIONS[animation.value].split("=====\n");
         aniIndex = 0;
     }
