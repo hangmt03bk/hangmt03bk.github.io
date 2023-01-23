@@ -23,7 +23,8 @@ function load(){
         animation.disabled = true;
     
         curText = textArea.value;
-        timer = setInterval(intervalTimeout,250);
+        var interval = turbo.checked==true?50:250;
+        timer = setInterval(intervalTimeout,interval);
         /*global ANIMATIONS */
         aniValue = ANIMATIONS[animation.value].split("=====\n");
         aniIndex = 0;
