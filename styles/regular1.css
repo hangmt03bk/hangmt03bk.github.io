@@ -1,0 +1,43 @@
+body{
+    display: block;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.login{
+    display: inline-block;
+    text-align: left;
+    
+}
+#email, #password, #url{
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightgray;
+    height: 35px;
+    width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#submit{
+    border-radius: 5px;
+    border-style: none;
+    height: 35px;
+    background-color: dodgerblue;
+    color: white;
+    width: 100px;
+}
+
+#emailNote{
+    color: gray;
+    font-size: 12pt;
+
+}
+.group{
+    margin-bottom: 25px;
+}
+
+.group div{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

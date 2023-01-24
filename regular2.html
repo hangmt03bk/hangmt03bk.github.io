@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WAP Regular Expressions</title>
+        <link href="styles/regular2.css" rel="stylesheet">
+    </head>
+    <body>
+        <form class = "container">
+            <div class="navbar">
+                <div class="navLeft">
+                    <div>MUM Golden Dome Market:::SRM System</div><div class="rule"></div> 
+                    <div>Products</div><div class="rule"></div> 
+                    <div>Suppliers</div>
+                </div>
+                <div class="navRight">
+                    <div>Hello!</div>
+                    <input type="button" value="Sign Out">
+                </div>
+            </div>
+            <div class="header"><p>New Product Form</p></div>
+            <div class="sideLeft"></div>
+            <div class="sideRight"></div>
+
+            <div class="contentLeft">                
+                <div class="group ">
+                    <div>Product Number</div>
+                    <input type="text" id="prodNum">
+                </div>
+                <div class="group">
+                    <div>Name</div>
+                    <input type="text">
+                </div>
+                <div class="group">
+                    <div>Unit Price</div>
+                    <input type="text" placeholder="0.0" pattern="\d+\.?\d*">
+                </div>
+            </div>
+            <div class="contentRight">
+                <div class="group">
+                    <div>Quantity in stock</div>
+                    <input type="number" placeholder="0">
+                </div>
+                <div class="group">
+                    <div>Supplier</div>
+                    <select id="suppliers" name="suppliers">
+                        <option>Select a suplier</option>
+                        <option>Microsoft</option>
+                        <option>Facebook</option>
+                        <option>Google</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <div>Date supplied</div>
+                    <input type="text" placeholder="yyyy-mm-dd" pattern="\d{4}-\d{2}-\d{2}">
+                    <div id="dateNote">Enter a valid Date</div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input id="reset" type="reset" value="Reset">
+                <input id="cancel" type="button" value="Cancel">
+                <input id="add" type="submit" value="Add Product">
+            </div>
+        </form>
+    </body>
+</html>

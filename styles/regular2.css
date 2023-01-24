@@ -1,0 +1,147 @@
+body{
+    font-size: 14pt;
+}
+
+.navbar{
+    grid-area: na;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: dodgerblue;
+    color: white;
+    align-items: center;
+    font-size: 18pt;
+}
+.navLeft{
+    width: 70%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+
+}
+.navLeft div, .navRight div {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.navRight{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.navRight input{
+    padding: 8px;
+    border-style: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-size: 14pt;
+}
+
+.rule{
+    border-left: 1px solid white;
+    height: 38px;
+}
+.header{
+    grid-area: he;
+    height: 80px;
+    font-size: 25pt;  
+    display: flex;
+    
+}
+.header p{
+    align-self: center;
+}
+
+.contentLeft{
+    grid-area: cl;
+    display: inline-block;
+    margin-left: 40px;
+
+}
+.contentRight{
+    grid-area: cr;
+    margin-left: 40px;
+}
+.buttons{
+    grid-area: bs;
+    display: flex;
+    justify-content: flex-end;
+}
+.sideLeft{
+    grid-area: sl;
+}
+.sideRight{
+
+    grid-area: sr;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    'na na na na na na'
+    'sl he he he he sr'
+    'sl cl cl cr cr sr'
+    'sl cl cl cr cr sr'
+    'sl bs bs bs bs sr';
+    font-size: 14pt;
+
+}
+
+.group{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.group div{
+    margin-bottom: 10px;
+    font-size: 16pt;
+}
+.contentLeft input[type="text"]{
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightgray;
+    height: 45px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15pt;
+    box-sizing: border-box;
+}
+
+.contentRight input, .contentRight select {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightgray;
+    height: 45px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15pt;
+    box-sizing: border-box;
+}
+
+.buttons input{
+    padding: 8px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 14pt;
+    background-color: transparent;
+    border-style: solid;
+}
+#reset{
+    color: navy;
+    border-color: navy;
+}
+#cancel{
+    color: red;
+    border-color: red;
+}
+#add{
+    color: dodgerblue;
+    border-color: dodgerblue;
+}
+#dateNote{
+    font-size: 12pt;
+    color: darkgray;
+}

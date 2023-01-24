@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WAP Regular Expressions</title>
+        <link href="styles/regular1.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "login">
+            <form>
+                <div class="group">
+                    <div>Website URL</div>
+                    <input id="url" type="text" placeholder="Enter url" pattern="https?://.*" title="Enter a valid url">
+                </div>
+                <div class="group">
+                    <div>Email address</div>
+                    <input id="email" type="text" placeholder="Enter email" pattern="\w+@\w+.\w+" title="Enter a valid email">
+                    <div id="emailNote">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="group">
+                    <div>Password</div>
+                    <input id="password" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+                <div class="group"><label><input type="checkbox">Check me out</label></div>
+                <div class="group"><input id="submit" type="submit"></div>
+            </form>
+        </div>
+    </body>
+</html>
