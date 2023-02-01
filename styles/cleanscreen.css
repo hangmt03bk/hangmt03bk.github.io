@@ -1,0 +1,17 @@
+
+
+
+#container{
+    width: 200px;
+}
+#container input[type='number']{
+    margin-bottom: 20px;   
+    width: 100%;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    z-index: -999;
+    top: 30%;
+}
