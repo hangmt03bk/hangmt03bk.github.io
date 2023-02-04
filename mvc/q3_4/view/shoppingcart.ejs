@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/shoppingcart.css" rel="stylesheet">
+        <title>Shopping Cart</title>
+    </head>
+    <body>
+        <h1> Shopping Cart</h1>
+        <img src="images/cart.png"> <%=count%>
+
+        <div id="list">
+        <% for(const index of cart) {%>
+            <div class="item">
+                <img src=<%=products[index].src%>>
+                <div><p><%=products[index].desc%><p></div>
+                <h2><%=products[index].price%></h2>
+            </div>
+        <% } %>
+        </div>
+    </body>
+</html>
