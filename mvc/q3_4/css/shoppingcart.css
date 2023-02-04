@@ -21,7 +21,8 @@ body{
     width: 500px;
     margin-right: 20px;
 }
-.item h2{
+.item .price{
     width: 100px;
+    text-align: right;
 }
 

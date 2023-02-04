@@ -34,23 +34,26 @@ var products = [
 }
 ];
 
-var cart=[];
-
+var cart=[{id:1,quantity:0},
+    {id:2,quantity:0},
+    {id:3,quantity:0}];
+var count= 0;
 app.get('/', (req, res) => {
    res.render("product",{
     products:products,
-    count: cart.length});
+    count: count});
 });
 
 app.post('/addToCart', (req,res) => {
-    cart.push(parseInt(req.body.id)-1);
-    //console.log(req.body);
+    cart[parseInt(req.body.id)-1].quantity++;
+    count++;
+    //console.log(cart);
     res.redirect('/');
 })
 
 app.get('/shoppingcart', (req,res) => {
     res.render("shoppingcart", {
-        count: cart.length,
+        count: count,
         cart: cart,
         products: products
     })

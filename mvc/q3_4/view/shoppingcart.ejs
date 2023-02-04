@@ -10,11 +10,19 @@
         <img src="images/cart.png"> <%=count%>
 
         <div id="list">
-        <% for(const index of cart) {%>
+        <% for(const prod of cart) {%>
+            <% if(prod.quantity == 0) continue;%>
             <div class="item">
-                <img src=<%=products[index].src%>>
-                <div><p><%=products[index].desc%><p></div>
-                <h2><%=products[index].price%></h2>
+                <img src=<%=products[prod.id-1].src%>>
+                <div>
+                    <p><%=products[prod.id-1].desc%><p>
+                    <p>Quantity: <%=prod.quantity%> </p>
+                </div>
+                <div class="price">
+                    <h3><%=products[prod.id-1].price%></h3>
+                    <% let total = products[prod.id-1].price * prod.quantity;%>
+                    <h3>Total: <%=total%></h3>
+                </div>
             </div>
         <% } %>
         </div>
