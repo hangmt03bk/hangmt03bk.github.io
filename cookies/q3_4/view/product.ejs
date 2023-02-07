@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/product.css" rel="stylesheet">
+        <title>Shopping home</title>
+    </head>
+    <body>
+        <h1> Shopping page</h1>
+        <form action="/shoppingcart" method="get">
+            <input type="image" src="images/cart.png" alt="submit"> <%=count%>
+        </form>  
+        <div id ='container'>
+            <% for(const item of products) {%>
+            
+            <form class='list' action="/addToCart" method="post"> 
+                <img src=<%=item.src%>
+                <h3><%=item.price%></h3>
+                <input type="submit" value="Add to Cart" >
+                <input type="hidden" value=<%=item.id%> name='id'>
+                <p><%=item.desc%></p>
+            </form>
+            
+            <% } %>       
+        </div>
+    </body>
+</html>

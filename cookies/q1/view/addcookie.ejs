@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WAP add cookies</title>
+        <link href="css/addcookie.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <form action="/addcookie" method="post">
+                Key <input type="text" name="key">
+                Value <input type="text" name="value">
+                <input type="submit" value="Add to cookies">
+            </form>
+        </div>
+        <div>
+            <h2>Cookies table</h2>
+            <table> 
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+                <% for(let key in cookies) {%>
+                <tr>
+                    <td><%=key%></td>
+                    <td><%=cookies[key]%></td>
+                </tr>
+                <%}%>
+            </table>
+        </div>
+    </body>
+</html>
