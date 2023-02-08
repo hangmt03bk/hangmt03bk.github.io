@@ -1,0 +1,28 @@
+body{
+    margin-left: 50px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#list div img{
+    width: 200px;
+}
+
+#list .item{
+    display: flex;
+    flex-direction: row;
+}
+
+.item div{
+    width: 500px;
+    margin-right: 20px;
+}
+.item .price{
+    width: 100px;
+    text-align: right;
+}
+
